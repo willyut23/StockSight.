@@ -2,9 +2,9 @@
 
 ML-powered stock price forecasting
 
-- Python 3.8+
-- FastAPI 0.95+
-- MIT License
+![Python](https://img.shields.io/badge/python-3.8+-blue?style=flat-square&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-009688?style=flat-square&logo=fastapi)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
 ---
 
@@ -13,8 +13,6 @@ ML-powered stock price forecasting
 **Only `app.py`** — backend, ML, and frontend all in one file.
 pip install fastapi uvicorn yfinance pandas numpy scikit-learn plotly
 uvicorn app:app --reload
-
-text
 
 Open http://localhost:8000
 
