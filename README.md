@@ -10,8 +10,6 @@ It comes with a modern, responsive dashboard built right into the API — no sep
 
 > 🧪 **For educational purposes only. This is not financial advice.**
 
-![demo](assets/demo.gif) <!-- Replace with a real screenshot/GIF -->
-
 ---
 
 ## ✨ Features
@@ -107,10 +105,10 @@ json
   "ticker": "AAPL",
   "horizon": 5,
   "r2": 0.872,
-  "hist_dates": ["2024-01-02", ...],
-  "hist_prices": [185.64, ...],
-  "future_dates": ["2024-01-12", ...],
-  "future_prices": [192.33, ...],
+  "hist_dates": ["2024-01-02", "..."],
+  "hist_prices": [185.64, "..."],
+  "future_dates": ["2024-01-12", "..."],
+  "future_prices": [192.33, "..."],
   "weekend_warning": false,
   "cached": false,
   "data_points": 124
@@ -169,4 +167,3 @@ Author: Willy Utomo (or your name)
 GitHub: @willyut23
 
 Email: your.email@example.com
-
