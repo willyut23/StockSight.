@@ -174,10 +174,9 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 📬 Contact
 
-- **Author:** Willy Utomo (or your name)
+- **Author:** William Lowry
 - **GitHub:** [@willyut23](https://github.com/willyut23)
-- **Email:** *your.email@example.com*
-
+- **Email:** WilliamLowry341@outlook.com
 ---
 
 *Built with ❤️ for curious minds who love finance and machine learning.*
