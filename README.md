@@ -1,3 +1,20 @@
+markdown
+## What to Install
+
+**Only one command needed:**
+pip install fastapi uvicorn yfinance pandas numpy scikit-learn plotly
+
+text
+
+Then run:
+uvicorn app:app --reload
+
+text
+
+That's it. No separate requirements.txt file needed.
+Or put it at the top for visibility:
+
+markdown
 # StockSight
 
 ML-powered stock price forecasting
@@ -8,78 +25,61 @@ ML-powered stock price forecasting
 
 ---
 
-## One File. Zero Bugs. Ready to Run.
+## Quick Start
 
-**Only `app.py`** — backend, ML, and frontend all in one file.
+```bash
 pip install fastapi uvicorn yfinance pandas numpy scikit-learn plotly
 uvicorn app:app --reload
-
 Open http://localhost:8000
+
+One File. Zero Bugs. Ready to Run.
+Only app.py — backend, ML, and frontend all in one file.
 
 No API keys. No database. No build step. No other files.
 
----
+Features
+1-Day Forecast — Predicts next trading day's closing price
 
-## Features
+5-Day Forecast — Predicts next 5 trading days
 
-**1-Day Forecast** — Predicts next trading day's closing price
+Interactive Chart — Historical + forecast with Plotly
 
-**5-Day Forecast** — Predicts next 5 trading days
+R² Confidence Score — Model reliability (0–1 scale)
 
-**Interactive Chart** — Historical + forecast with Plotly
+Smart Caching — 1-hour TTL, no redundant API calls
 
-**R² Confidence Score** — Model reliability (0–1 scale)
+10+ Quick Picks — AAPL, TSLA, NVDA, MSFT, GOOGL, AMZN, META, SPY, BTC-USD, NFLX
 
-**Smart Caching** — 1-hour TTL, no redundant API calls
+Weekend Warning — Auto-detects non-trading days
 
-**10+ Quick Picks** — AAPL, TSLA, NVDA, MSFT, GOOGL, AMZN, META, SPY, BTC-USD, NFLX
+Error Handling — Invalid tickers, missing data, network retries
 
-**Weekend Warning** — Auto-detects non-trading days
+ML Features (18 total)
+Lag Prices — Close price from 1 to 10 days ago
 
-**Error Handling** — Invalid tickers, missing data, network retries
+Lag Volume — Volume from 1, 2, and 3 days ago
 
----
+Moving Averages — 5-day, 10-day, 20-day SMA
 
-## ML Features (18 total)
+Volatility — 5-day and 10-day standard deviation of close
 
-**Lag Prices** — Close price from 1 to 10 days ago
+Price Range — Daily high minus low
 
-**Lag Volume** — Volume from 1, 2, and 3 days ago
+Model — Random Forest Regressor (100 trees, max depth 6)
 
-**Moving Averages** — 5-day, 10-day, 20-day SMA
+Training — 80% historical, validation on 20%
 
-**Volatility** — 5-day and 10-day standard deviation of close
+Accuracy Guide
+R² > 0.7 — Strong fit, reasonably trustworthy
 
-**Price Range** — Daily high minus low
+R² 0.3 – 0.7 — Moderate, use with caution
 
-**Model** — Random Forest Regressor (100 trees, max depth 6)
+R² < 0.3 — Weak, directional only
 
-**Training** — 80% historical, validation on 20%
-
----
-
-## Accuracy Guide
-
-**R² > 0.7** — Strong fit, reasonably trustworthy
-
-**R² 0.3 – 0.7** — Moderate, use with caution
-
-**R² < 0.3** — Weak, directional only
-
----
-
-## That's It
-
-One file. Run it. Done.
-
----
-
-## Disclaimer
-
+Disclaimer
 For educational purposes only. Not financial advice.
 
----
-
-## License
-
+License
 MIT
+
+text
